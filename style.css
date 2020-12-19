@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.whatarage-task{
+  background-image: url('./images/pattern.JPG');
+  background-position: center;
+  position: relative;
+  background-repeat: repeat;
+  height: 100%;
+}
+.whatarage-task-container{
+  width: 80%;
+  margin: 0 auto;
+}
+.whatarage-task-header-container{
+  padding: 40px 0;
+}
+.whatarage-task-header-container h4{
+  text-align: center;
+  padding: 10px 0;
+}
+.whatarage-task-header-container h1{
+  text-align: center;
+}
+.whatarage-task-header-container p{
+  text-align: center;  
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px 0;
+  line-height: 28px;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#resource-slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  border-radius: 3px;
+  background: transparent;
+  overflow: hidden;
+}
+
+#resource-slider .arrow {
+  cursor: pointer;
+  position: absolute;
+  width: 2em;
+  /* height: 100%; */
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  background: transparent;
+  border: none;
+}
+
+#resource-slider .arrow:hover {
+  /* background: rgba(0, 0, 0, 0.1); */
+}
+
+#resource-slider .arrow:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0.75em;
+  height: 0.75em;
+  margin: auto;
+  border-style: solid;
+}
+
+#resource-slider .prev {
+  left: 0;
+  top: 20%;
+  /* bottom: 0; */
+}
+
+#resource-slider .prev:before {
+  left: 0.25em;
+  border-width: 3px 0 0 3px;
+  border-color: #333 transparent transparent #333;
+  transform: rotate(-45deg);
+}
+
+#resource-slider .next {
+  right: 0;
+  top: 20%;
+  /* bottom: 0; */
+}
+
+#resource-slider .next:before {
+  right: 0.25em;
+  border-width: 3px 3px 0 0;
+  border-color: #333 #333 transparent transparent;
+  transform: rotate(45deg);
+}
+
+#resource-slider .resource-slider-frame {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  right: 2em;
+  bottom: 0;
+  border-left: 0.25em solid transparent;
+  border-right: 0.25em solid transparent;
+  overflow: hidden;
+}
+
+#resource-slider .resource-slider-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  height: 100%;
+}
+
+#resource-slider .resource-slider-inset {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0.5em 0.25em;
+  overflow: hidden;
+}
+.carousel-text{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: 99%;
+    line-height: 200px;
+}
+.mosaic-block{
+  position: relative;
+}
+.resource img{
+  width: 100%;
+  height: 100%;
+}
+.active{
+  position: fixed;
+  left: 13%;
+  width: 75%;
+}
+.mosaic-block-highlighted>.carousel-text {
+  background: rgba(0, 255, 255, 0.5);
+}
+.img-desc-title{
+  width: 80%;
+  margin: 40px auto 0;
+}
+.img-desc-title h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.img-desc-title p{
+  text-align: center;
+  line-height: 24px;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+@media ( max-width: 768px ) {
+  #resource-slider .resource-slider-item {
+    width: 33.33%;
+  }
+  /* #resource-slider {
+    height: 16em;
+  } */
+}
+@media ( min-width: 621px ) and ( max-width: 767px ) {
+  #resource-slider .resource-slider-item {
+    width: 50%;
+  }
+  .carousel-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 224px;
+    height: auto;
+  }
+  .active {
+    top: 46%;
+  }
+}
+@media ( min-width: 481px ) and ( max-width: 620px ) {
+  #resource-slider .resource-slider-item {
+    width: 50%;
+  }
+  .carousel-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 248px;
+    height: auto;
+  }
+  .active {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media ( min-width: 320px ) and ( max-width: 480px ) {
+  #resource-slider .resource-slider-item {
+    width: 100%;
+  }
+  .carousel-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 248px;
+    height: auto;
+  }
+  .active {
+    position: relative;
+    left: 0;
+    width: 100%;
+  }
+}
